@@ -13,11 +13,9 @@ export const Footer = ({ onOpenPolicyModal, onOpenAllergyModal }) => {
           
           {/* Brand & Address */}
           <div className="md:col-span-2 space-y-3">
-            <img 
-              src="/images/top-logo.svg" 
-              alt="Massala Hut" 
-              className="h-10 w-auto object-contain opacity-90"
-            />
+<h1 className="h-10 sm:h-12 w-auto object-contain font-bold text-white text-4xl sm:text-5xl">
+  Spice Cottage
+</h1>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-sm">
               Authentic Indian Takeaway in Howden, Goole. Providing high-quality curries, tandoori grills, biryanis, and chef specialties cooked fresh with finest spices.
             </p>

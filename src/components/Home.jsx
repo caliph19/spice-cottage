@@ -75,11 +75,9 @@ export const Home = ({ onNavigateToOrder }) => {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center py-24 flex flex-col items-center">
-          <img 
-            src="/images/main-logo.svg" 
-            alt="Massala Hut Takeaway" 
-            className="w-72 sm:w-96 md:w-[480px] h-auto object-contain drop-shadow-2xl animate-in zoom-in-95 duration-500"
-          />
+<h1 className="h-10 sm:h-12 w-auto object-contain font-bold text-white text-4xl sm:text-5xl">
+  Spice Cottage
+</h1>
 
           <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-xl mt-4 font-light tracking-wide">
             Experience exceptional Indian cuisine carefully prepared with authentic spices and fresh local ingredients.
