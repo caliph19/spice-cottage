@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    background-color: #fafafa;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    color: #222;
+  }
+}
+
+/* Custom animated takeaway button like the original website */
+.animated-takeaway-btn {
+  position: relative;
+  /* display: inline-block; */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 0, 0, 0.4);
+}
+
+.animated-takeaway-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(214, 0, 0, 0.6);
+}
+
+.animated-takeaway-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: buttonShine 3s infinite;
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Custom Scrollbar for Category and Cart lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a9891e;
+}
