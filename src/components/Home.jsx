@@ -67,7 +67,7 @@ export const Home = ({ onNavigateToOrder }) => {
     <div className="flex flex-col w-full">
       {/* Hero Section */}
       <section 
-        className="relative min-h-[90vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="relative min-h-[100vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('/images/background.jpg')` }}
       >
         {/* Dark overlay */}
